@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: nft-parser
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    healthCheckPath: /health
